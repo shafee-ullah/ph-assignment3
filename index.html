@@ -68,7 +68,6 @@
               <li><a>Contact US</a></li>
             </ul>
           </div>
-
           <div class="navbar-end  gap-4 hidden lg:flex">
             <button class="btn btn-ghost btn-circle">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -117,49 +116,270 @@
   </header>
   <main class="mt-36">
     <!-- services section -->
-    <section class="md:container mx-auto">
-      <h3 class="text-3xl font-semibold text-[rgba(23,152,0,1)]">Services</h3>
-      <div class="mt-11">
+    <section class=" md:container mx-auto">
+      <h3 class="ml-3 text-3xl font-semibold text-[rgba(23,152,0,1)]">Services</h3>
+      <div class="ml-3 mt-11 grid grid-cols-1 lg:grid-cols-3 gap-3">
         <!-- card-1 -->
         <div class="card bg-base-100 w-96 bg-[rgba(239,235,227,1)]  ">
           <figure class="px-10 pt-10">
-            <div class="bg-white rounded-full p-4 shadow-md w-fit mx-auto"> <!-- Added rounded container -->
-              <img 
-                src="assets/service.png" 
-                alt="24/7" 
-                class="w-24 h-24 object-contain"
-              />
+            <div class="bg-white rounded-full p-4  w-fit mx-auto"> <!-- Added rounded container -->
+              <img src="assets/service.png" alt="24/7" class="w-24 h-24 object-contain" />
             </div>
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">24/7 Services </h2>
             <p>Our 24/7 service ensures that you have access to support and assistance whenever you need it, day or
               night.</p>
-           
+
           </div>
         </div>
         <!-- card-2 -->
         <div class="card bg-base-100 w-96 bg-[rgba(239,235,227,1)]  ">
           <figure class="px-10 pt-10">
-            <div class="bg-white rounded-full p-4 shadow-md w-fit mx-auto"> <!-- Added rounded container -->
-              <img 
-                src="assets/service.png" 
-                alt="24/7" 
-                class="w-24 h-24 object-contain"
-              />
+            <div class="bg-white rounded-full p-4  w-fit mx-auto">
+              <img src="assets/delivery.png" alt="FD" class="w-24 h-24 object-contain" />
             </div>
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title">24/7 Services </h2>
-            <p>Our 24/7 service ensures that you have access to support and assistance whenever you need it, day or
-              night.</p>
-           
+            <h2 class="card-title">Fast Delivery </h2>
+            <p>Our fast delivery service ensures that your orders reach you in record time, without compromising on
+              quality.</p>
+
           </div>
         </div>
         <!-- card-3 -->
-         
+        <div class="card bg-base-100 w-96 bg-[rgba(239,235,227,1)]  ">
+          <figure class="px-10 pt-10">
+            <div class="bg-white rounded-full p-4  w-fit mx-auto">
+              <img src="assets/healthy.png" alt="HP" class="w-24 h-24 object-contain" />
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Healthy Products </h2>
+            <p>
+              Our healthy products are crafted with the finest natural ingredients to ensure you receive the best
+              nutrition.</p>
+
+          </div>
+        </div>
       </div>
 
+    </section>
+
+    <!-- Popular products section -->
+    <section class=" mt-36 pb-36 bg-[rgba(239,235,227,1)]">
+      <div class="md:container mx-auto ">
+        <h3 class=" pt-36 ml-3 text-3xl font-semibold text-[rgba(23,152,0,1)]">Popular Products</h3>
+        <div class="mt-12 flex flex-col lg:flex-row gap-4">
+
+          <!-- big card -->
+          <div class="card ml-3 bg-base-100 w-96 h-96  bg-gradient-to-b from-[rgba(23,152,0,1)] to-white ">
+            <div class="card-body  flex flex-col ">
+              <h2 class="card-title text-3xl text-white mb-4">30% off</h2>
+              <p class="text-[rgba(17,17,17,1)] mb-6">
+                Discover a world of treats, toys, and<br>
+                essentials handpicked for
+              </p>
+
+              <div class="flex  ">
+                <button class="btn bg-white text-black
+                                hover:bg-gray-100 border-none 
+                                  rounded-xl">
+                  <span class="text-lg font-semibold">Buy Now</span>
+                </button>
+                <div class="-mt-4">
+                  <img src="assets/vegetable-offer.png" alt="vegetables" class="w-52" />
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- small cards -->
+          <div>
+            <div class=" px-4 sm:px-8 lg:px-12">
+              <div class="grid grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Product Card 1 -->
+                <div class="card lg:ml-8 bg-base-100 lg:max-w-[275px] lg:h-[118px]">
+                  <div class="card-body p-4 flex flex-row items-center gap-4">
+                    <div class="flex-shrink-0 rounded bg-[rgba(239,235,227,1)]">
+                      <img src="assets/onion.png" alt="Onion" class="w-20 h-20 rounded-lg p-2 object-cover" />
+                    </div>
+                    <div class="flex flex-col justify-center">
+                      <div class="flex items-center gap-1 mb-1">
+                        <div class="rating rating-xs">
+                          <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500" checked />
+
+                        </div>
+                        <span class="text-sm font-medium">4.5</span>
+                      </div>
+                      <h3 class=" font-bold">Onion 1KG</h3>
+                      <p class="lg:text-lg font-bold text-black">$39.99</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- product card 2 -->
+                <div class="card lg:ml-8 bg-base-100 lg:max-w-[275px] lg:h-[118px]">
+                  <div class="card-body p-4 flex flex-row items-center gap-4">
+                    <div class="flex-shrink-0 rounded bg-[rgba(239,235,227,1)]">
+                      <img src="assets/tomato.png" alt="Tomato" class="w-20 h-20 rounded-lg p-2 object-cover" />
+                    </div>
+                    <div class="flex flex-col justify-center">
+                      <div class="flex items-center gap-1 mb-1">
+                        <div class="rating rating-xs">
+                          <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500" checked />
+
+                        </div>
+                        <span class="text-sm font-medium">4.5</span>
+                      </div>
+                      <h3 class=" font-bold">Tomato 1KG</h3>
+                      <p class="lg:text-lg font-bold text-black">$50.99</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- product card 3 -->
+                <div class="card  lg:ml-8 bg-base-100 lg:max-w-[275px] lg:h-[118px]">
+                  <div class="card-body p-4 flex flex-row items-center gap-4">
+                    <div class="flex-shrink-0 rounded bg-[rgba(239,235,227,1)]">
+                      <img src="assets/grape.png" alt="Grape" class="w-20 h-20 rounded-lg p-2 object-cover" />
+                    </div>
+                    <div class="flex flex-col justify-center">
+                      <div class="flex items-center gap-1 mb-1">
+                        <div class="rating rating-xs">
+                          <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500" checked />
+
+                        </div>
+                        <span class="text-sm font-medium">5</span>
+                      </div>
+                      <h3 class=" font-bold">Grape 1KG</h3>
+                      <p class="lg:text-lg font-bold text-black">$30.99</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- product card 4 -->
+                <div class="card lg:ml-8 bg-base-100 lg:max-w-[275px] lg:h-[118px]">
+                  <div class="card-body p-4 flex flex-row items-center gap-4">
+                    <div class="flex-shrink-0 rounded bg-[rgba(239,235,227,1)]">
+                      <img src="assets/potato.png" alt="Potato" class="w-20 h-20 rounded-lg p-2 object-cover" />
+                    </div>
+                    <div class="flex flex-col justify-center">
+                      <div class="flex items-center gap-1 mb-1">
+                        <div class="rating rating-xs">
+                          <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500" checked />
+
+                        </div>
+                        <span class="text-sm font-medium">3.5</span>
+                      </div>
+                      <h3 class=" font-bold">Potato 1KG</h3>
+                      <p class="lg:text-lg font-bold text-black">$27.99</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- product card 5 -->
+                <div class="card lg:ml-8 bg-base-100 lg:max-w-[275px] lg:h-[118px]">
+                  <div class="card-body p-4 flex flex-row items-center gap-4">
+                    <div class="flex-shrink-0 rounded bg-[rgba(239,235,227,1)]">
+                      <img src="assets/lemon.png" alt="Lemon" class="w-20 h-20 rounded-lg p-2 object-cover" />
+                    </div>
+                    <div class="flex flex-col justify-center">
+                      <div class="flex items-center gap-1 mb-1">
+                        <div class="rating rating-xs">
+                          <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500" checked />
+
+                        </div>
+                        <span class="text-sm font-medium">4.5</span>
+                      </div>
+                      <h3 class=" font-bold">Lemon 1KG</h3>
+                      <p class="lg:text-lg font-bold text-black">$10.99</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- product card 6 -->
+                <div class="card lg:ml-8 bg-base-100 lg:max-w-[275px] lg:h-[118px]">
+                  <div class="card-body p-4 flex flex-row items-center gap-4">
+                    <div class="flex-shrink-0 rounded bg-[rgba(239,235,227,1)]">
+                      <img src="assets/orange.png" alt="Orange" class="w-20 h-20 rounded-lg p-2 object-cover" />
+                    </div>
+                    <div class="flex flex-col justify-center">
+                      <div class="flex items-center gap-1 mb-1">
+                        <div class="rating rating-xs">
+                          <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500" checked />
+
+                        </div>
+                        <span class="text-sm font-medium">4</span>
+                      </div>
+                      <h3 class=" font-bold">Orange 1KG</h3>
+                      <p class="lg:text-lg font-bold text-black">$15.99</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- product card 7 -->
+                <div class="card lg:ml-8 bg-base-100 lg:max-w-[275px] lg:h-[118px]">
+                  <div class="card-body p-4 flex flex-row items-center gap-4">
+                    <div class="flex-shrink-0 rounded bg-[rgba(239,235,227,1)]">
+                      <img src="assets/apple.png" alt="Apple" class="w-20 h-20 rounded-lg p-2 object-cover" />
+                    </div>
+                    <div class="flex flex-col justify-center">
+                      <div class="flex items-center gap-1 mb-1">
+                        <div class="rating rating-xs">
+                          <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500" checked />
+
+                        </div>
+                        <span class="text-sm font-medium">4.5</span>
+                      </div>
+                      <h3 class=" font-bold">Apple 1KG</h3>
+                      <p class="lg:text-lg font-bold text-black">$25.99</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- product card 8 -->
+                <div class="card lg:ml-8 bg-base-100 lg:max-w-[275px] lg:h-[118px]">
+                  <div class="card-body p-4 flex flex-row items-center gap-4">
+                    <div class="flex-shrink-0 rounded bg-[rgba(239,235,227,1)]">
+                      <img src="assets/banana.png" alt="Banana" class="w-20 h-20 rounded-lg p-2 object-cover" />
+                    </div>
+                    <div class="flex flex-col justify-center">
+                      <div class="flex items-center gap-1 mb-1">
+                        <div class="rating rating-xs">
+                          <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500" checked />
+
+                        </div>
+                        <span class="text-sm font-medium">5</span>
+                      </div>
+                      <h3 class=" font-bold">Banana 12Pc</h3>
+                      <p class="lg:text-lg font-bold text-black">$19.99</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- product card 9 -->
+
+                <div class="card lg:ml-8 bg-base-100 lg:max-w-[275px] lg:h-[118px] hidden lg:flex">
+                  <div class="card-body p-4 flex flex-row items-center gap-4">
+                    <div class="flex-shrink-0 rounded bg-[rgba(239,235,227,1)]">
+                      <img src="assets/carrot.png" alt="Carrot" class="w-20 h-20 rounded-lg p-2 object-cover" />
+                    </div>
+                    <div class="flex flex-col justify-center">
+                      <div class="flex items-center gap-1 mb-1">
+                        <div class="rating rating-xs">
+                          <input type="radio" name="rating-1" class="mask mask-star-2 bg-green-500" checked />
+
+                        </div>
+                        <span class="text-sm font-medium">4</span>
+                      </div>
+                      <h3 class=" font-bold">Carrot 2KG</h3>
+                      <p class="lg:text-lg font-bold text-black">$60</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
     </section>
   </main>
 </body>
