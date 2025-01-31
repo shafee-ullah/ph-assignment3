@@ -27,7 +27,7 @@
           colors: {
             clifford: '#da373d',
             'btn-primary': 'rgba(23, 152, 0, 1.00)',
-            'light-dark':'rgba(17, 17, 17, 1)',
+            'light-dark': 'rgba(17, 17, 17, 1)',
           },
         },
       },
@@ -37,85 +37,131 @@
 
 <body class="sora-font">
   <!-- Header Section -->
-  <header class="bg-gradient-to-b from-white to-[#f7f6f3]" >
+  <header class="bg-gradient-to-b from-white to-[#f7f6f3]">
     <section class="md:container mx-auto ">
-    <nav>
-      <div class="navbar bg-base-100">
-        <div class="navbar-start ">
-          <img class="w-28 mt-2 object-contain" src="assets/logo-header.png" alt="">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost ml-56 lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                class="inline-block h-7 w-7 stroke-current text-[#179800]"> <!-- Hex equivalent -->
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
-                </path>
-              </svg>
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start ">
+            <img class="w-28 mt-2 object-contain" src="assets/logo-header.png" alt="">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost ml-56 lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  class="inline-block h-7 w-7 stroke-current text-[#179800]"> <!-- Hex equivalent -->
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                  </path>
+                </svg>
+              </div>
+              <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact US</a></li>
+              </ul>
             </div>
-            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+
+          </div>
+          <div class="navbar-center hidden lg:flex">
+
+            <ul class="menu menu-horizontal px-1 text-black">
               <li><a>Product</a></li>
               <li><a>Services</a></li>
               <li><a>Contact US</a></li>
             </ul>
           </div>
-          <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
 
+          <div class="navbar-end  gap-4 hidden lg:flex">
+            <button class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+            <button class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            </button>
+
+            <a class="btn bg-white px-8 font-normal rounded-lg text-black border-lime-700">Login</a>
+            <a class="btn bg-btn-primary px-8 font-normal rounded-lg text-white">Register</a>
+          </div>
         </div>
-        <div class="navbar-center hidden lg:flex">
+        <div class=" bottom-0 left-0 w-full h-px bg-[rgba(23,152,0,1)] lg:hidden"></div>
+      </nav>
+      <!-- banner content -->
+      <div class="hero mt-12 lg:mt-24">
+        <div class="hero-content text-center grid">
+          <div>
+            <h1 class="text-3xl lg:text-5xl font-semibold">
+              Freshness <span class="text-[rgba(23,152,0,1)]">You Can</span>
+            </h1>
 
-          <ul class="menu menu-horizontal px-1 text-black">
-            <li><a>Product</a></li>
-            <li><a>Services</a></li>
-            <li><a>Contact US</a></li>
-          </ul>
-        </div>
+            <h1 class="text-3xl lg:text-5xl font-semibold my-1 lg:my-3">
+              <span class="text-[rgba(23,152,0,1)]">Count</span> On, Prices <br class="lg:hidden">You’ll Love!
+            </h1>
 
-        <div class="navbar-end  gap-4 hidden lg:flex">
-          <button class="btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-          </button>
-          <button class="btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
-          </button>
-
-          <a class="btn bg-white px-8 font-normal rounded-lg text-black border-lime-700">Login</a>
-          <a class="btn bg-btn-primary px-8 font-normal rounded-lg text-white">Register</a>
+            <p class="py-3 lg:py-6 ">
+              Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you
+              covered every day!
+            </p>
+          </div>
+          <div>
+            <img class="" src="assets/hero-vegetables.png" alt="">
+          </div>
         </div>
       </div>
-      <div class=" bottom-0 left-0 w-full h-px bg-[rgba(23,152,0,1)] lg:hidden"></div>
-    </nav>
-    <!-- banner content -->
-    <div class="hero mt-12 lg:mt-24">
-      <div class="hero-content text-center grid">
-        <div>
-          <h1 class="text-3xl lg:text-5xl font-semibold">
-            Freshness <span class="text-[rgba(23,152,0,1)]">You Can</span>
-          </h1>
-         
-          <h1 class="text-3xl lg:text-5xl font-semibold my-1 lg:my-3">
-            <span class="text-[rgba(23,152,0,1)]">Count</span> On, Prices <br class="lg:hidden">You’ll Love!
-          </h1>
-    
-          <p class="py-3 lg:py-6 ">
-            Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you
-            covered every day!
-          </p>
-        </div>
-        <div>
-          <img class="" src="assets/hero-vegetables.png" alt="">
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
   </header>
+  <main class="mt-36">
+    <!-- services section -->
+    <section class="md:container mx-auto">
+      <h3 class="text-3xl font-semibold text-[rgba(23,152,0,1)]">Services</h3>
+      <div class="mt-11">
+        <!-- card-1 -->
+        <div class="card bg-base-100 w-96 bg-[rgba(239,235,227,1)]  ">
+          <figure class="px-10 pt-10">
+            <div class="bg-white rounded-full p-4 shadow-md w-fit mx-auto"> <!-- Added rounded container -->
+              <img 
+                src="assets/service.png" 
+                alt="24/7" 
+                class="w-24 h-24 object-contain"
+              />
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">24/7 Services </h2>
+            <p>Our 24/7 service ensures that you have access to support and assistance whenever you need it, day or
+              night.</p>
+           
+          </div>
+        </div>
+        <!-- card-2 -->
+        <div class="card bg-base-100 w-96 bg-[rgba(239,235,227,1)]  ">
+          <figure class="px-10 pt-10">
+            <div class="bg-white rounded-full p-4 shadow-md w-fit mx-auto"> <!-- Added rounded container -->
+              <img 
+                src="assets/service.png" 
+                alt="24/7" 
+                class="w-24 h-24 object-contain"
+              />
+            </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">24/7 Services </h2>
+            <p>Our 24/7 service ensures that you have access to support and assistance whenever you need it, day or
+              night.</p>
+           
+          </div>
+        </div>
+        <!-- card-3 -->
+         
+      </div>
 
+    </section>
+  </main>
 </body>
 
 </html>
