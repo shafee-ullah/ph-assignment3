@@ -18,6 +18,21 @@
     .sora-font {
       font-family: 'Sora', serif;
     }
+  
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(100%);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .animate-slide-in {
+      animation: slideIn 1s ease-out forwards;
+    }
   </style>
 
   <script>
@@ -57,7 +72,7 @@
                 <li><a>Contact US</a></li>
               </ul>
             </div>
-            <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+            
 
           </div>
           <div class="navbar-center hidden lg:flex">
@@ -93,19 +108,21 @@
       <!-- banner content -->
       <div class="hero mt-12 lg:mt-24">
         <div class="hero-content text-center grid">
-          <div>
-            <h1 class="text-3xl lg:text-5xl font-semibold">
-              Freshness <span class="text-[rgba(23,152,0,1)]">You Can</span>
-            </h1>
-
-            <h1 class="text-3xl lg:text-5xl font-semibold my-1 lg:my-3">
-              <span class="text-[rgba(23,152,0,1)]">Count</span> On, Prices <br class="lg:hidden">You’ll Love!
-            </h1>
-
-            <p class="py-3 lg:py-6 ">
-              Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you
-              covered every day!
-            </p>
+          <div class="overflow-hidden">
+            <div class="relative opacity-0 translate-x-full animate-slide-in">
+              <h1 class="text-3xl lg:text-5xl font-semibold">
+                Freshness <span class="text-[rgba(23,152,0,1)]">You Can</span>
+              </h1>
+          
+              <h1 class="text-3xl lg:text-5xl font-semibold my-1 lg:my-3">
+                <span class="text-[rgba(23,152,0,1)]">Count</span> On, Prices <br class="lg:hidden">You’ll Love!
+              </h1>
+          
+              <p class="py-3 lg:py-6">
+                Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you
+                covered every day!
+              </p>
+            </div>
           </div>
           <div>
             <img class="" src="assets/hero-vegetables.png" alt="">
